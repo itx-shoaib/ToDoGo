@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* Css for Home.js */
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+  padding: 20px;
+  width: 100%;
+}
