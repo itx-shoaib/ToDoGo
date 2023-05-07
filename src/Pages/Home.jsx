@@ -35,7 +35,7 @@ function Home (){
               {"Don't have an account? Sign Up"}
             </Typography>
           ):(
-            <Typography variant="body1" onClick={()=>setSignin((prev)=>!prev)} sx={{cursor:"pointer"}}>
+            <Typography variant="body2" onClick={()=>setSignin((prev)=>!prev)} sx={{cursor:"pointer"}}>
               {"Already have an account? Sign In"}
             </Typography>
           )}
