@@ -9,7 +9,6 @@ import {
   TextField,
   Button,
 } from "@mui/material";
-import { Link } from "react-router-dom";
 import { Login } from "./Login/Login";
 import { Register } from "./Register/Register";
 
