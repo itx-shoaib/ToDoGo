@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "../App.css";
-import { Typography, Button, Box, Grid, TextField, CssBaseline, Container } from "@mui/material";
+import { Typography, Box, Grid, CssBaseline, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Login } from './Login/Login';
+import { Register } from './Register/Register';
 
 function Home (){
+  const [signin, setSignin] = useState(true)
   return (
     <Container component="main" maxWidth="xs">
     <CssBaseline />
@@ -13,17 +15,31 @@ function Home (){
         Welcome To ToDoGo!
       </Typography>
       <Box component="form" noValidate sx={{ mt: 1 }}>
+
+      {signin?(
         <Login/>
+      ):(
+        <Register/>
+      )}
+        
         <Grid container>
           <Grid item xs>
-            <Link href="#" variant="body2">
+          { signin && (<Link href="#" variant="body2">
               Forgot password?
-            </Link>
+            </Link>) }
+            
           </Grid>
           <Grid item>
-            <Link href="#" variant="body2">
+          {signin ? (
+            <Typography variant="body2" onClick={()=>setSignin((prev)=>!prev)} sx={{cursor:"pointer"}}>
               {"Don't have an account? Sign Up"}
-            </Link>
+            </Typography>
+          ):(
+            <Typography variant="body1" onClick={()=>setSignin((prev)=>!prev)} sx={{cursor:"pointer"}}>
+              {"Already have an account? Sign In"}
+            </Typography>
+          )}
+            
           </Grid>
         </Grid>
       </Box>
