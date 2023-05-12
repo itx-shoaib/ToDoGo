@@ -13,8 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['About Us','Blog'];
+const settings = ['Profile', 'Logout'];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,7 +36,7 @@ function Navbar() {
     };
     
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{backgroundColor:"#343a40"}}>
     <Container maxWidth="xl">
       <Toolbar disableGutters>
         <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -55,7 +55,7 @@ function Navbar() {
             textDecoration: 'none',
           }}
         >
-          LOGO
+          ToDoGo
         </Typography>
 
         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -111,7 +111,7 @@ function Navbar() {
             textDecoration: 'none',
           }}
         >
-          LOGO
+         ToDoGo
         </Typography>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
           {pages.map((page) => (
