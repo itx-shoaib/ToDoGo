@@ -1,5 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
+import Task from "./Task";
 
 function Homepage() {
   return (
@@ -12,7 +13,7 @@ function Homepage() {
       >
         <Grid items md={4} xs={12} >
         <Box sx={{background:"#5c5b5beb",color:"white",height:"70vh",margin:"20px",textAlign: "center"}}>
-        Task
+        <Task/>
         </Box>
         </Grid>
         <Grid items md={4} xs={12} >
