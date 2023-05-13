@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
-export default function TasCard() {
+export default function ReminderCard() {
   return (
     <Card sx={{margin:"20px"}}>
       <CardContent sx={{padding:"15px"}}>
