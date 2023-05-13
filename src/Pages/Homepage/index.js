@@ -1,6 +1,8 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
 import Task from "./Task";
+import Reminder from "./Reminder"
+import Completed from "./Completed"
 
 function Homepage() {
   return (
@@ -12,18 +14,18 @@ function Homepage() {
         alignItems="center"
       >
         <Grid items md={4} xs={12} >
-        <Box sx={{background:"#5c5b5beb",color:"white",height:"70vh",margin:"20px",textAlign: "center"}}>
+        <Box sx={{background:"#5c5b5beb",color:"white",margin:"20px",textAlign: "center"}}>
         <Task/>
         </Box>
         </Grid>
         <Grid items md={4} xs={12} >
-        <Box sx={{background:"#5c5b5beb",color:"white",height:"70vh",margin:"20px",textAlign: "center"}}>
-        Reminder
+        <Box sx={{background:"#5c5b5beb",color:"white",margin:"20px",textAlign: "center"}}>
+        <Reminder/>
         </Box>
         </Grid>
         <Grid items md={4} xs={12} >
-        <Box sx={{background:"#5c5b5beb",color:"white",height:"70vh",margin:"20px",textAlign: "center"}}>
-        Completed
+        <Box sx={{background:"#5c5b5beb",color:"white",margin:"20px",textAlign: "center"}}>
+        <Completed/>
         </Box>
         </Grid>
       </Grid>
